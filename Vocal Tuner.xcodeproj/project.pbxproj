@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130A6038264C39DE0099E2F8 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A6037264C39DE0099E2F8 /* TestListView.swift */; };
+		130A6039264C39DE0099E2F8 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A6037264C39DE0099E2F8 /* TestListView.swift */; };
+		130A6040264C3B4C0099E2F8 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A603F264C3B4C0099E2F8 /* Landmark.swift */; };
+		130A6041264C3B4C0099E2F8 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A603F264C3B4C0099E2F8 /* Landmark.swift */; };
 		139CE5882643D461004EF7CF /* Vocal_TunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CE5752643D45E004EF7CF /* Vocal_TunerApp.swift */; };
 		139CE5892643D461004EF7CF /* Vocal_TunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CE5752643D45E004EF7CF /* Vocal_TunerApp.swift */; };
 		139CE58A2643D461004EF7CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CE5762643D45E004EF7CF /* ContentView.swift */; };
@@ -16,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130A6037264C39DE0099E2F8 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
+		130A603F264C3B4C0099E2F8 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		139CE5752643D45E004EF7CF /* Vocal_TunerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocal_TunerApp.swift; sourceTree = "<group>"; };
 		139CE5762643D45E004EF7CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		139CE5772643D461004EF7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,9 +50,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130A6036264C39AA0099E2F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				130A6037264C39DE0099E2F8 /* TestListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		130A603E264C3B350099E2F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				130A603F264C3B4C0099E2F8 /* Landmark.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		130A6046264C42A40099E2F8 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
 		139CE56F2643D45E004EF7CF = {
 			isa = PBXGroup;
 			children = (
+				130A6046264C42A40099E2F8 /* ThirdParty */,
 				139CE5742643D45E004EF7CF /* Shared */,
 				139CE57E2643D461004EF7CF /* iOS */,
 				139CE5852643D461004EF7CF /* macOS */,
@@ -57,6 +87,8 @@
 		139CE5742643D45E004EF7CF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				130A603E264C3B350099E2F8 /* Models */,
+				130A6036264C39AA0099E2F8 /* Views */,
 				139CE5752643D45E004EF7CF /* Vocal_TunerApp.swift */,
 				139CE5762643D45E004EF7CF /* ContentView.swift */,
 				139CE5772643D461004EF7CF /* Assets.xcassets */,
@@ -187,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130A6038264C39DE0099E2F8 /* TestListView.swift in Sources */,
 				139CE58A2643D461004EF7CF /* ContentView.swift in Sources */,
 				139CE5882643D461004EF7CF /* Vocal_TunerApp.swift in Sources */,
+				130A6040264C3B4C0099E2F8 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130A6039264C39DE0099E2F8 /* TestListView.swift in Sources */,
 				139CE58B2643D461004EF7CF /* ContentView.swift in Sources */,
 				139CE5892643D461004EF7CF /* Vocal_TunerApp.swift in Sources */,
+				130A6041264C3B4C0099E2F8 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3QXWQZY5CL;
@@ -390,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3QXWQZY5CL;

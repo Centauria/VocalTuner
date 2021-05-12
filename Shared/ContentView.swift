@@ -9,13 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading) {
+            Text("Vocal Tuner")
+                .font(.title)
+                .foregroundColor(Color.green)
+                .padding()
+            HStack {
+                Text("User")
+                    .font(.subheadline)
+                Spacer()
+                Text("JH")
+                    .font(.subheadline)
+                Text("???")
+            }
+        }
+        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
+        }
     }
 }

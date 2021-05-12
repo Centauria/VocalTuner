@@ -11,7 +11,7 @@ import SwiftUI
 struct Vocal_TunerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TestListView()
         }
     }
 }
